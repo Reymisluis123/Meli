@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel de Revisiones</title>
+  <link rel="stylesheet" href="carrusel.css">
+</head>
+<body>
+  <div class="carousel">
+    <div class="carousel-inner">
+      <div class="review active">
+        <img src="img/japon.JPEG" alt="Revisión 1">
+        <p>"¡Excelente servicio! Me encantó la atención al cliente y la calidad de los productos."</p>
+        <p class="author">- Juan Pérez</p>
+        <div class="rating">★★★★★</div>
+      </div>
+      <div class="review">
+        <img src="img/review2.jpg" alt="Revisión 2">
+        <p>"Los productos son de alta calidad y el envío fue rápido. ¡Muy recomendado!"</p>
+        <p class="author">- María Gutiérrez</p>
+        <div class="rating">★★★★☆</div>
+      </div>
+      <div class="review">
+        <img src="img/review3.jpg" alt="Revisión 3">
+        <p>"Me encantó la facilidad de uso de la página web. ¡Volveré a comprar aquí!"</p>
+        <p class="author">- Carlos López</p>
+        <div class="rating">★★★★★</div>
+      </div>
+      <!-- Agregar más revisiones aquí -->
+    </div>
+    <button class="prev" onclick="changeReview(-1)">&#10094;</button>
+    <button class="next" onclick="changeReview(1)">&#10095;</button>
+  </div>
+  
+  <script src="carrusel.js"></script>
+</body>
+</html>
